@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic')
+
 *
   margin: 0
   padding: 0
@@ -9,18 +11,29 @@ body
     right: 30px
   display: grid
   grid-template-columns: 1fr
+  font-family: 'Montserrat', sans-serif
 
 div
   border: 1px solid #000000
 
 .header
   display: grid
-  grid-template-columns: repeat(3, 1fr)
+  grid-template-columns: repeat(2, 1fr) minmax(200px, 20%)
   grid-template-rows: 84px
   .logo
     background-image: url(Image/logo.svg)
     background-repeat: no-repeat
     background-position: 0 0
+    margin-left: 20px
+    h3
+      margin-top: 18px
+      color: #105DF9
+      font-size: 1.2rem
+      text-transform: uppercase
+    p
+      color: dimgray
+      font-size: .65rem
+      text-transform: uppercase
   .menu
     display: flex
     place-self: center
@@ -29,6 +42,18 @@ div
       text-decoration: none
       color: dimgray
       text-align: center
+  .blockButtons
+    margin-top: 20px
+    text-align: right
+    form
+      display: inline-flex
+      input[type="button"]
+        height: 50px
+        background: #0057FF
+        color: #ffffff
+        padding: 10px
+        border: none
+        font-size: 1rem
 
 .preview
   display: grid
@@ -36,22 +61,49 @@ div
   grid-template-rows: minmax(auto, 500px)
   background: url("Image/preview.jpg")
   color: #ffffff
+  .title
+    display: grid
+    font-size: 3rem
+    font-weight: 700
+    text-transform: uppercase
+    align-content: center
+    padding-left: 50px
+  .desc
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    text-transform: uppercase
+    grid-gap: 20px
+    align-items: center
+    .numberBox
+      font-weight: 600
+      font-size: 2.2rem
+    p
+      font-size: 1.4rem
 
 .boxImg
   display: grid
   grid-template-columns: repeat(3, minmax(auto, 460px))
   grid-template-rows: repeat(3, minmax(auto, 460px))
   color: #ffffff
+  font-size: 1.5rem
+  font-weight: 600
   .imgRzd
     grid-row: 1 / 3
-    background: url("Image/image 1.png")
+    background: url("Image/image 1.png") no-repeat
+    background-size: cover
+    p
+      align-content: end
   .imgAvia
     grid-column: 2 / 4
-    background: url("Image/image 2.png")
+    background: url("Image/image 2.png") no-repeat
+    background-size: cover
   .imgAuto
-    background: url("Image/image 3.png")
+    background: url("Image/image 3.png") no-repeat
+    background-size: cover
   .imgSaved
-    background: url("Image/image 4.png")
+    background: url("Image/image 4.png") no-repeat
+    background-size: cover
   .imgSea
     grid-column: 1 / 4
-    background: url("Image/image 5.png")
+    background: url("Image/image 5.png") no-repeat
+    background-size: cover
