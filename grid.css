@@ -6,8 +6,8 @@
 }
 
 body {
-  margin-left: 30px;
-  margin-right: 30px;
+  max-width: 1380px;
+  margin: 0 30px;
   display: grid;
   grid-template-columns: 1fr;
   font-family: "Montserrat", sans-serif;
@@ -165,6 +165,10 @@ body {
 }
 .callback .callText h2 {
   margin-bottom: 10px;
+}
+.callback .callForm {
+  display: flex;
+  justify-self: end;
 }
 .callback .callForm form {
   width: 500px;
