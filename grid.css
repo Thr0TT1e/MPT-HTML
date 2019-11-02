@@ -13,14 +13,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-div {
-  border: 1px solid #000000;
-}
-
 .header {
   display: grid;
   grid-template-columns: repeat(2, 1fr) minmax(200px, 20%);
-  grid-template-rows: 84px;
+  grid-template-rows: 90px;
 }
 .header .logo {
   background-image: url(Image/logo.svg);
@@ -48,6 +44,9 @@ div {
   text-decoration: none;
   color: dimgray;
   text-align: center;
+}
+.header .menu a:hover {
+  border-bottom-style: solid;
 }
 .header .blockButtons {
   margin-top: 20px;
@@ -103,31 +102,189 @@ div {
   font-size: 1.5rem;
   font-weight: 600;
 }
+.boxImg .imgText {
+  position: absolute;
+  bottom: 0;
+  margin: 45px;
+}
+.boxImg .imgText a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.boxImg .imgText a:hover {
+  border-bottom-style: solid;
+}
 .boxImg .imgRzd {
+  position: relative;
   grid-row: 1/3;
   background: url("Image/image 1.png") no-repeat;
   background-size: cover;
 }
-.boxImg .imgRzd p {
-  align-content: end;
-}
 .boxImg .imgAvia {
+  position: relative;
   grid-column: 2/4;
   background: url("Image/image 2.png") no-repeat;
   background-size: cover;
 }
 .boxImg .imgAuto {
+  position: relative;
   background: url("Image/image 3.png") no-repeat;
   background-size: cover;
 }
 .boxImg .imgSaved {
+  position: relative;
   background: url("Image/image 4.png") no-repeat;
   background-size: cover;
 }
 .boxImg .imgSea {
+  position: relative;
   grid-column: 1/4;
   background: url("Image/image 5.png") no-repeat;
   background-size: cover;
+}
+
+.separator {
+  height: 84px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: url("Image/blue_line.png");
+  background-size: contain;
+}
+
+.callback {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-transform: uppercase;
+  color: #0057FF;
+  margin-bottom: 10px;
+}
+.callback .callText {
+  line-height: 1.5;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+.callback .callText h2 {
+  margin-bottom: 10px;
+}
+.callback .callForm form {
+  width: 500px;
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 50px;
+}
+.callback .callForm form p {
+  font-size: 0.6rem;
+  margin-right: 10px;
+}
+.callback .callForm input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  height: 45px;
+  border: 2px solid #0057FF;
+  color: #0057FF;
+  padding: 10px;
+  margin-bottom: -2px;
+}
+.callback .callForm input::placeholder {
+  color: #0057FF;
+}
+.callback .callForm textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  width: 500px;
+  border: 2px solid #0057FF;
+  padding: 10px;
+}
+.callback .callForm textarea::placeholder {
+  color: #0057FF;
+}
+.callback .callForm input[type=submit] {
+  font-family: "Montserrat", sans-serif;
+  background: #0057FF;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 22px;
+  padding: 10px;
+}
+.callback .callForm .sendButton {
+  display: flex;
+  align-items: center;
+}
+
+#name, #lastname {
+  width: 251px;
+  margin-right: -2px;
+}
+
+#emailForm {
+  width: 500px;
+}
+
+footer {
+  background-color: #105DF9;
+  color: #ffffff;
+}
+footer .footerBG {
+  background-image: url("Image/white_line.png");
+  background-repeat: repeat-x;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 90px;
+}
+footer .footerContainer {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+footer .footerContainer .footerInfo h2 {
+  text-transform: uppercase;
+}
+footer .footerContainer .footerTel {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
+footer .footerContainer .footerTel a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .footerContainer .footerEmail {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+footer .footerContainer .footerEmail a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .footerContainer .footerCallBack {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+footer .footerContainer .footerCallBack a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom-style: dotted;
+}
+footer .footerContainer .footerMenu h2 {
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+footer .footerContainer .footerMenu ul {
+  display: flex;
+  list-style: none;
+  margin-bottom: 30px;
+}
+footer .footerContainer .footerMenu ul li {
+  font-size: 1.1rem;
+}
+footer .footerContainer .footerMenu ul li a {
+  margin-right: 30px;
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .footerContainer .footerMenu ul li a:hover {
+  border-bottom-style: dotted;
 }
 
 /*# sourceMappingURL=grid.css.map */
