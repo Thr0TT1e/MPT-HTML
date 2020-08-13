@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap&subset=cyrillic");
 body {
   max-width: 1380px;
-  margin: 0 30px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   font-family: "Montserrat", sans-serif;
